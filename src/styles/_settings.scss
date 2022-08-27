@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "title-font";
+  src: url(../assets/fonts/RationalDisplaySemiBold.otf);
+}
+
+@font-face {
+  font-family: "h2-font";
+  src: url(../assets/fonts/NanumGothic-Regular.ttf);
+}
+
+@font-face {
+  font-family: "btn-font";
+  src: url(../assets/fonts/nk57-monospace-cd-lt.ttf);
+}
+
+@font-face {
+  font-family: "text-font";
+  src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap);
+}
+
+// FONTS
+$title-font: "title-font", sans-serif;
+$h2-font: "h2-font", sans-serif;
+$btn-font: "btn-font", sans-serif;
+$text-font: "text-font", sans-serif;
+
+// COLORS
+$text-color: #ffffff;
+$menu-burger-color: #ffffff;
+$nav-separation-color: #808080;
+$color-hover-nav: #42ba96;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $text-font;
+  color: $text-color;
+}
+
+body {
+  background-color: black;
+  height: 1000px;
+}

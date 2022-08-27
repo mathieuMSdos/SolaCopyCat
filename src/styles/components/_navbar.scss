@@ -1,0 +1,141 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: fit-content;
+  //   background-color: red;
+
+  nav {
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: orange;
+  }
+
+  a {
+    width: fit-content;
+    // background-color: yellow;
+  }
+
+  .logo {
+    margin: 20px;
+    width: 9.5rem;
+  }
+
+  ul {
+    list-style-type: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    // background-color: blue;
+  }
+
+  li {
+    margin-right: 30px;
+    cursor: pointer;
+    font-family: $title-font;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      color: $color-hover-nav;
+    }
+  }
+
+  .downArrow {
+    fill: white;
+    color: white;
+    stroke: white;
+  }
+
+  .menuBtn {
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 19px;
+    right: 40px;
+    font-size: 1rem;
+    overflow: hidden;
+  }
+
+  .menuBtnBurger {
+    width: 20px;
+    height: 2px;
+    background-color: $menu-burger-color;
+    transition: transform 0.2s ease-in-out;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      background-color: $menu-burger-color;
+      transition: all 0.2s ease-in-out;
+    }
+    &::before {
+      transform: translateY(-6px);
+    }
+    &::after {
+      transform: translateY(6px);
+    }
+  }
+
+  //   BURGER ICON ANIMATION
+  .menuBtn.open .menuBtnBurger {
+    transform: translateX(-50px);
+    background-color: transparent;
+  }
+
+  .menuBtn.open .menuBtnBurger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  .menuBtn.open .menuBtnBurger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+
+  //   REPONSIVE
+
+  @media screen and (max-width: 800px) {
+    nav {
+      flex-direction: column;
+      align-items: unset;
+      background-color: blue;
+    }
+
+    .menuBtn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    ul {
+      border-top: solid $nav-separation-color 1px;
+      border-bottom: solid $nav-separation-color 1px;
+      flex-direction: column;
+      align-items: unset;
+    }
+
+    li:nth-child(1) {
+      border: none;
+    }
+
+    li {
+      border-top: solid $nav-separation-color 1px;
+      width: 100%;
+      padding: 25px 0 25px 20px;
+    }
+  }
+}
