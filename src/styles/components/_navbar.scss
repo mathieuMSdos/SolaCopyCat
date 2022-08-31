@@ -3,17 +3,21 @@ header {
   top: 0;
   width: 100%;
   height: fit-content;
-  //   background-color: red;
+  transition: 0.2s ease-in-out;
+
+  // background-color: red;
 
   nav {
     position: absolute;
+    margin-top: 5px;
     width: 100%;
     height: fit-content;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    background-color: orange;
+    // background-color: orange;
+    transition: 0.2s ease-in-out;
   }
 
   a {
@@ -22,59 +26,65 @@ header {
   }
 
   .logo {
-    margin: 20px;
-    width: 9.5rem;
+    margin: 10px;
+    margin-left: 60px;
+    width: 7.5rem;
+    transition: 0.4s ease-in-out;
   }
 
   ul {
     list-style-type: none;
     height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: right;
     position: relative;
     transition: 0.3s ease-in-out;
+    margin-right: 60px;
     // background-color: blue;
   }
 
   li {
-    margin-right: 30px;
+    margin-right: 40px;
     cursor: pointer;
     font-family: $title-font;
-    font-size: 1rem;
+    font-size: 0.87rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.3s ease-in-out;
+    column-gap: 3px;
+    transition: 0.2s ease-in-out;
+    // background-color: red;
 
     &:hover {
       color: $color-hover-nav;
     }
   }
-
-  .downArrow {
-    fill: white;
-    color: white;
-    stroke: white;
+  // able to change color of li + Down arrow in same time after hover
+  li:hover * :not(.arrowContainer) {
+    background-color: $color-hover-nav;
+    color: $color-hover-nav;
   }
 
   .menuBtn {
     cursor: pointer;
     display: none;
     position: absolute;
+    top: 6px;
     width: 25px;
     height: 25px;
-    top: 19px;
     right: 40px;
     font-size: 1rem;
     overflow: hidden;
+    transition: 0.2s ease-in-out;
   }
 
   .menuBtnBurger {
     width: 20px;
     height: 2px;
     background-color: $menu-burger-color;
-    transition: transform 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
 
     &::before,
     &::after {
@@ -108,11 +118,26 @@ header {
 
   //   REPONSIVE
 
+  @media screen and (max-width: 1200px) {
+    ul {
+      margin-right: 30px;
+    }
+
+    li:nth-last-child(1) {
+      margin-right: 0px;
+    }
+
+    .logo {
+      margin-left: 15px;
+    }
+  }
+
   @media screen and (max-width: 800px) {
     nav {
       flex-direction: column;
       align-items: unset;
-      background-color: blue;
+      //   background-color: blue;
+      transition: 0.2s ease-in-out;
     }
 
     .menuBtn {
@@ -122,10 +147,25 @@ header {
     }
 
     ul {
+      position: relative;
       border-top: solid $nav-separation-color 1px;
       border-bottom: solid $nav-separation-color 1px;
       flex-direction: column;
       align-items: unset;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: -5%;
+        width: 120%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent 0%, #000 5%, #000 100%);
+        animation: fadeShadow 0.3s linear forwards;
+      }
+    }
+
+    .animAppear {
+      animation: appear 0.2s ease-in-out forwards;
     }
 
     li:nth-child(1) {
@@ -136,6 +176,27 @@ header {
       border-top: solid $nav-separation-color 1px;
       width: 100%;
       padding: 25px 0 25px 20px;
+      justify-content: left;
     }
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeShadow {
+  0% {
+    left: -5%;
+  }
+
+  100% {
+    left: 120%;
   }
 }

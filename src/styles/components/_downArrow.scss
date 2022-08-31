@@ -1,0 +1,29 @@
+.arrowContainer {
+    height: 15px;
+    width: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: red;
+
+    .downArrow {
+      width: 2px;
+      height: 9px;
+      border-radius: 5px;
+      background-color: white;
+      margin: 2px;
+      transform: rotate(-45deg);
+      transition: 0.2s ease-in-out;
+    }
+
+    .downArrow2 {
+      width: 2px;
+      height: 9px;
+      border-radius: 5px;
+      background-color: white;
+      margin: 2px;
+      transform: rotate(45deg);
+      transition: 0.2s ease-in-out;
+
+    }
+  }

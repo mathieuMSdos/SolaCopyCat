@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import solLogo from "../assets/img/sol_logo.svg";
-import downArrow from "../assets/img/down-arrow.svg";
+import DownArrow from "./DownArrow";
 
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -36,19 +36,18 @@ export default function Navbar() {
         </div>
 
         {(toggleMenu || width > 800) && (
-          <ul className={toggleMenu ? "list open" : "list"}>
+          <ul className={toggleMenu ? " animAppear" : ""}>
             <li>
-              Developers{" "}
-              <svg
-                className="downArrow"
-                src={downArrow}
-                height="15"
-                width="15"
-              ></svg>
+              Developers
+              <DownArrow />
             </li>
-            <li>Network</li>
-            <li>Validateurs</li>
-            <li>Community</li>
+            <li>
+              Network <DownArrow />
+            </li>
+            <li>Validators</li>
+            <li>
+              Community <DownArrow />{" "}
+            </li>
             <li>Ecosystem</li>
           </ul>
         )}
