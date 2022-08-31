@@ -36,7 +36,7 @@ export default function Navbar() {
         </div>
 
         {(toggleMenu || width > 800) && (
-          <ul className={toggleMenu ? " animAppear" : ""}>
+          <ul>
             <li>
               Developers
               <DownArrow />

@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: "btn-font";
-  src: url(../assets/fonts/nk57-monospace-cd-lt.ttf);
+  src: url(../assets/fonts/NanumGothic-Bold.ttf);
 }
 
 @font-face {
@@ -24,11 +24,20 @@ $h2-font: "h2-font", sans-serif;
 $btn-font: "btn-font", sans-serif;
 $text-font: "text-font", sans-serif;
 
+//FONT SIZE
+$h2-font-size : 1rem;
+
 // COLORS
+$background-color: #000000;
 $text-color: #ffffff;
 $menu-burger-color: #ffffff;
 $nav-separation-color: #808080;
 $color-hover-nav: #42ba96;
+$color-btn: #14f195;
+$color-text-highlight-select: #00ffbd; 
+$color-text-highlight: #232323;
+$color-border-btn: white;
+$color-hover-btn:white;
 
 * {
   margin: 0;
@@ -41,5 +50,6 @@ $color-hover-nav: #42ba96;
 
 body {
   background-color: black;
-  height: 1000px;
+  height: 100vh;
+  width: 100%;
 }

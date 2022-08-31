@@ -1,19 +1,27 @@
 import React from "react";
+import SolanaHeroVid from "../assets/video/solanaHeroVid.mp4";
 
-export default function VideoHeroe() {
+export default function Test() {
   return (
-    <section className="heroSection">
-      <div className="videoPlaceHolder">
-        <video src=""></video>
-        <div className="overlay"></div>
-      </div>
-      <div className="heroContainer">
-        <div className="rowAlignItemCenter">
-          <div className="textButtonContainer">
-            <h1 className="heroTitle">Powerful for developers. Fast for everyone.</h1>
-            <a href="" className="heroBtnStart"></a>
-          </div>
+    <section className="videoHeroContainer">
+      <div className="overlayTop"></div>
+      <div className="overlayBottom"></div>
+
+      <div className="container">
+        <div className="videoPlaceHolder">
+          <video src={SolanaHeroVid} autoPlay loop muted></video>
         </div>
+      </div>
+      <div className="textAndBtnContainer">
+        <h1>Powerful for developers. Fast for everyone.</h1>
+        <div className="btnContainer">
+          <a href="">start building</a>
+          <a href="">read documentation</a>
+        </div>
+        <h2>
+          Solana is a decentralized blockchain built to enable scalable,
+          user-friendly apps for the world.
+        </h2>
       </div>
     </section>
   );

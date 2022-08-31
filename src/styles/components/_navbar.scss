@@ -4,12 +4,13 @@ header {
   width: 100%;
   height: fit-content;
   transition: 0.2s ease-in-out;
+  z-index: 1000;
 
   // background-color: red;
 
   nav {
     position: absolute;
-    margin-top: 5px;
+    margin-top: 10px;
     width: 100%;
     height: fit-content;
     display: flex;
@@ -28,7 +29,7 @@ header {
   .logo {
     margin: 10px;
     margin-left: 60px;
-    width: 7.5rem;
+    width: 9rem;
     transition: 0.4s ease-in-out;
   }
 
@@ -49,7 +50,7 @@ header {
     margin-right: 40px;
     cursor: pointer;
     font-family: $title-font;
-    font-size: 0.87rem;
+    font-size: 1.05rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,12 +61,15 @@ header {
     &:hover {
       color: $color-hover-nav;
     }
+
   }
   // able to change color of li + Down arrow in same time after hover
   li:hover * :not(.arrowContainer) {
     background-color: $color-hover-nav;
     color: $color-hover-nav;
   }
+
+
 
   .menuBtn {
     cursor: pointer;
@@ -118,7 +122,7 @@ header {
 
   //   REPONSIVE
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1300px) {
     ul {
       margin-right: 30px;
     }
@@ -136,8 +140,11 @@ header {
     nav {
       flex-direction: column;
       align-items: unset;
-      //   background-color: blue;
       transition: 0.2s ease-in-out;
+      background-color: $background-color;
+              // background-color: blue;
+
+
     }
 
     .menuBtn {
@@ -152,6 +159,8 @@ header {
       border-bottom: solid $nav-separation-color 1px;
       flex-direction: column;
       align-items: unset;
+      background-color: $background-color;
+      box-shadow: 2px 8px 8px 0px #00000077;
 
       &::before {
         content: "";
@@ -162,10 +171,6 @@ header {
         background: linear-gradient(90deg, transparent 0%, #000 5%, #000 100%);
         animation: fadeShadow 0.3s linear forwards;
       }
-    }
-
-    .animAppear {
-      animation: appear 0.2s ease-in-out forwards;
     }
 
     li:nth-child(1) {
