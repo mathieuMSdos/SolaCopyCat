@@ -20,14 +20,20 @@
 
   .videoPlaceHolder {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
   }
   video {
     position: absolute;
-    width: 100%;
+    height: 100%;
     right: 0;
     top: 0;
-    z-index: -1;
     object-fit: cover;
+    object-position: center;
+    pointer-events: none;
+    z-index: -1;
   }
 
   .overlayTop {
@@ -62,7 +68,7 @@
 
   .textAndBtnContainer {
     height: 100%;
-    width: 43%;
+    width: 45%;
     position: relative;
     margin-left: 5rem;
     margin-top: 5rem;
@@ -91,14 +97,16 @@
       a:nth-child(2) {
         text-transform: uppercase;
         text-decoration: none;
-        height: 40px;
+        height: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 20px;
+        flex-direction: row;
+        padding: 0 30px;
         border-radius: 50px;
         font-family: $btn-font;
-        font-size: 12px;
+        font-size: 15px;
+        text-align: center;
         transition: 0.2s ease-in-out;
 
         &:hover {
@@ -125,7 +133,7 @@
       width: 80%;
       font-size: $h2-font-size;
       font-family: $h2-font;
-      line-height: 1.3rem;
+      line-height: 1.6rem;
 
       &::selection {
         background: $color-text-highlight-select;
@@ -135,29 +143,39 @@
   }
 }
 
-// .videoHeroContainer {
-//   height: 100%;
-//   width: 100%;
-//   background: red;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
+@media screen and (max-width: 980px) {
+  .videoHeroContainer {
+    justify-content: center;
 
-//   video {
-//     width: 100%;
-//     height: 100%;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     z-index: 5;
-//     object-fit: cover;
-//   }
+    .textAndBtnContainer {
+      align-items: center;
+      width: 75%;
+      margin-left: unset;
+      margin-top: 10rem;
+      padding: 0px 10px;
 
-//   .textAndBtnContainer {
-//     // position: absolute;
-//     position: relative;
-//     z-index: 20;
-//     text-align: center;
-//     color: #ffffff;
-//   }
-// }
+      h1,
+      h2 {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .btnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    flex-direction: column;
+    row-gap: 0.8rem;
+
+    a:nth-child(1),
+    a:nth-child(2) {
+      text-align: center;
+      padding: 0 10px;
+    }
+
+  }
+}
