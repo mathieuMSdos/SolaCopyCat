@@ -61,15 +61,12 @@ header {
     &:hover {
       color: $color-hover-nav;
     }
-
   }
   // able to change color of li + Down arrow in same time after hover
   li:hover * :not(.arrowContainer) {
     background-color: $color-hover-nav;
     color: $color-hover-nav;
   }
-
-
 
   .menuBtn {
     cursor: pointer;
@@ -142,9 +139,7 @@ header {
       align-items: unset;
       transition: 0.2s ease-in-out;
       background-color: $background-color;
-              // background-color: blue;
-
-
+      // background-color: blue;
     }
 
     .menuBtn {
