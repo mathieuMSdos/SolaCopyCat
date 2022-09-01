@@ -1,0 +1,6 @@
+.counterContainer{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    background-color: $color-btn;
+}

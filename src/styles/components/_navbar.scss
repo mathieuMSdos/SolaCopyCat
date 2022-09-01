@@ -10,15 +10,16 @@ header {
 
   nav {
     position: absolute;
-    margin-top: 10px;
+    height: 70px;
     width: 100%;
-    height: fit-content;
+    margin-top: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    // background-color: orange;
     transition: 0.2s ease-in-out;
+    background-color: $background-color;
+    // background-color: orange;
   }
 
   a {
@@ -28,7 +29,7 @@ header {
 
   .logo {
     margin: 10px;
-    margin-left: 60px;
+    margin-left: 70px;
     width: 9rem;
     transition: 0.4s ease-in-out;
   }
@@ -121,7 +122,7 @@ header {
 
   @media screen and (max-width: 1300px) {
     ul {
-      margin-right: 30px;
+      margin-right: 40px;
     }
 
     li:nth-last-child(1) {
@@ -129,7 +130,7 @@ header {
     }
 
     .logo {
-      margin-left: 15px;
+      margin-left: 20px;
     }
   }
 
