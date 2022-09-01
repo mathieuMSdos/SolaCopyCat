@@ -3,8 +3,12 @@ import solLogo from "../assets/img/sol_logo.svg";
 import DownArrow from "./DownArrow";
 
 export default function Navbar() {
+  // STATES
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [show, setShow] = useState(true);
   const [width, setWidth] = useState(window.innerWidth);
+
+  // FUNCTIONS
 
   const toggleNav = () => {
     setToggleMenu(!toggleMenu);
@@ -14,6 +18,16 @@ export default function Navbar() {
     setWidth(window.innerWidth);
   };
 
+  const controlNavBar = () => {
+    if (window.scrollY > 60) {
+      setShow(false);
+    } else {
+      setShow(true);
+    }
+  };
+
+  // USE EFFECT
+
   useEffect(() => {
     window.addEventListener("resize", changeWidth);
     // cleanup function
@@ -22,8 +36,15 @@ export default function Navbar() {
     };
   }, []);
 
+  useEffect(() => {
+    window.addEventListener("scroll", controlNavBar);
+    return () => {
+      window.removeEventListener("scroll", controlNavBar)
+    }
+  }, []);
+
   return (
-    <header>
+    <header className={show ? "" : "headerFade"}>
       <nav>
         <a href="">
           <img className="logo" src={solLogo} alt="" />
