@@ -68,7 +68,7 @@
 
   .textAndBtnContainer {
     height: 100%;
-    width: 45%;
+    width: 50%;
     position: relative;
     margin-left: 5rem;
     margin-top: 4rem;
@@ -79,7 +79,7 @@
     // background-color: green;
 
     h1 {
-      font-size: calc(30px + 4.5vw);
+      font-size: calc(2.2rem + 4.5vw);
       font-family: $title-font;
       line-height: 1;
 
@@ -133,7 +133,8 @@
       width: 80%;
       font-size: $h2-font-size;
       font-family: $h2-font;
-      line-height: 1.6rem;
+      font-weight: 100;
+      line-height: 1.7rem;
 
       &::selection {
         background: $color-text-highlight-select;

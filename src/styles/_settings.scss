@@ -1,21 +1,41 @@
+// @font-face {
+//   font-family: "title-font";
+//   src: url(../assets/fonts/RationalDisplaySemiBold.otf);
+// }
+
+// @font-face {
+//   font-family: "h2-font";
+//   src: url(../assets/fonts/NanumGothic-Regular.ttf);
+// }
+
+// @font-face {
+//   font-family: "btn-font";
+//   src: url(../assets/fonts/NanumGothic-Bold.ttf);
+// }
+
+// @font-face {
+//   font-family: "text-font";
+//   src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap);
+// }
+
 @font-face {
   font-family: "title-font";
-  src: url(../assets/fonts/RationalDisplaySemiBold.otf);
+  src: url(../assets/fonts/ABCDiatype-Bold.f2bf1e1c.otf);
 }
 
 @font-face {
   font-family: "h2-font";
-  src: url(../assets/fonts/NanumGothic-Regular.ttf);
+  src: url(../assets/fonts/ABCDiatype-Regular.2505c0cb.otf);
 }
 
 @font-face {
   font-family: "btn-font";
-  src: url(../assets/fonts/NanumGothic-Bold.ttf);
+  src: url(../assets/fonts/ABCDiatypeSemi-Mono-Regular.39db908c.otf);
 }
 
 @font-face {
   font-family: "text-font";
-  src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap);
+  src: url(../assets/fonts/ABCDiatypeSemi-Mono-Regular.39db908c.otf);
 }
 
 // FONTS
@@ -25,7 +45,7 @@ $btn-font: "btn-font", sans-serif;
 $text-font: "text-font", sans-serif;
 
 //FONT SIZE
-$h2-font-size : 1.2rem;
+$h2-font-size : 1.4rem;
 
 // COLORS
 $background-color: #000000;
