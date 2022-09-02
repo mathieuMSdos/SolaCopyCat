@@ -43,6 +43,10 @@
       letter-spacing: 1px;
       color: $color-counter-text;
 
+      &::selection {
+        background-color: $color-text-highlight-select;
+      }
+
       // background-color: blue;
     }
 
@@ -51,6 +55,11 @@
       color: $color-counter-text;
       font-size: 2.3rem;
       letter-spacing: 1px;
+      
+      &::selection {
+        background-color: $color-text-highlight-select;
+      }
+
     }
     .transacCounter {
       width: 265px;

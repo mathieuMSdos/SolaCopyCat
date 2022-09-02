@@ -1,23 +1,3 @@
-// @font-face {
-//   font-family: "title-font";
-//   src: url(../assets/fonts/RationalDisplaySemiBold.otf);
-// }
-
-// @font-face {
-//   font-family: "h2-font";
-//   src: url(../assets/fonts/NanumGothic-Regular.ttf);
-// }
-
-// @font-face {
-//   font-family: "btn-font";
-//   src: url(../assets/fonts/NanumGothic-Bold.ttf);
-// }
-
-// @font-face {
-//   font-family: "text-font";
-//   src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap);
-// }
-
 @font-face {
   font-family: "title-font";
   src: url(../assets/fonts/ABCDiatype-Bold.f2bf1e1c.otf);
@@ -38,8 +18,6 @@
   src: url(../assets/fonts/ABCDiatypeSemi-Mono-Regular.39db908c.otf);
 }
 
-
-
 // FONTS
 $title-font: "title-font", sans-serif;
 $h2-font: "h2-font", sans-serif;
@@ -47,22 +25,24 @@ $btn-font: "btn-font", sans-serif;
 $text-font: "text-font", sans-serif;
 
 //FONT SIZE
-$h2-font-size : 1.4rem;
+$h2-font-size: 1.4rem;
 
 // COLORS
 $background-color: #000000;
 $text-color: #ffffff;
 $menu-burger-color: #ffffff;
-$nav-separation-color: #808080;
+$nav-separation-color: #80808089;
 $color-hover-nav: #42ba96;
 $color-btn: #14f195;
-$color-text-highlight-select: #00ffbd; 
+$background-color-btn-Explorer: #9945ff;
+$color-text-highlight-select: #00ffbd;
 $color-text-highlight: #232323;
 $color-border-btn: #ffffff;
-$color-hover-btn:#ffffff;
+$color-hover-btn: #ffffff;
 $color-counter-text: #000000;
 $color-border-counter: #000000;
 $color-counter-separator: #000000;
+
 
 * {
   margin: 0;
@@ -70,7 +50,6 @@ $color-counter-separator: #000000;
   box-sizing: border-box;
   font-family: $text-font;
   color: $text-color;
-  
 }
 
 body {

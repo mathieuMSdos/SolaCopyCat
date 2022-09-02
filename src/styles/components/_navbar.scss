@@ -2,7 +2,6 @@
   opacity: 0;
   visibility: hidden;
   transition: 0.2s ease-in-out;
-
 }
 
 header {
@@ -14,9 +13,8 @@ header {
   z-index: 1000;
   // background-color: red;
 
-  
-
   nav {
+    user-select: none;
     position: absolute;
     height: 70px;
     width: 100%;
@@ -56,6 +54,7 @@ header {
   }
 
   li {
+    user-select: none;
     margin-right: 40px;
     cursor: pointer;
     font-family: $title-font;
@@ -142,7 +141,7 @@ header {
     }
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 900px) {
     nav {
       height: fit-content;
       flex-direction: column;

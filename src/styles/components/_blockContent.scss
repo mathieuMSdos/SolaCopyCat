@@ -1,0 +1,104 @@
+.containerBlockContent {
+  width: 100%;
+  height: 100%;
+  padding: 10rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: calc(1rem + 3vw);
+  transition: 0.2s ease;
+
+
+  h2 {
+    width: 100%;
+    font-family: $title-font;
+    font-size: calc(4rem + 1vw);
+    line-height: calc(4rem + 1vw);
+    transition: 0.1s ease;
+}
+
+  .contentContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    row-gap: 40px;
+    transition: 0.2s ease;
+
+
+    .h3container {
+      h3 {
+        width: 100%;
+        font-family: $h2-font;
+        font-weight: 100;
+        font-size: calc(0.9rem + 0.7vw);
+        transition: 0.2s ease;
+
+      }
+    }
+
+    .btnExplore {
+      cursor: pointer;
+      text-transform: uppercase;
+      text-decoration: none;
+      height: 40px;
+      width: 230px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      padding: 0 10px;
+      border-radius: 50px;
+      font-family: $btn-font;
+      font-size: 15px;
+      text-align: center;
+      background-color: $background-color-btn-Explorer;
+      color: $text-color;
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        background-color: $color-hover-btn;
+        transform: translateY(-5px);
+        color: $background-color;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .containerBlockContent {
+    padding: 10rem 7rem;
+    column-gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .containerBlockContent {
+    flex-direction: column;
+    text-align: center;
+    row-gap: calc(0.5rem + 0.7vw);
+
+
+    h2 {
+      font-size: calc(3.2rem + 1vw);
+      line-height: calc(3.2rem + 1vw);
+      // background-color: red;
+    }
+
+    .contentContainer {
+
+        align-items: center;
+
+      .h3container {
+
+        h3 {
+          font-size: calc(1.1rem + 0.7vw);
+        }
+      }
+
+      // background-color: blue;
+    }
+  }
+}

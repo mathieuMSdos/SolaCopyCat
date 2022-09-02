@@ -19,7 +19,7 @@ export default function Navbar() {
   };
 
   const controlNavBar = () => {
-    if (window.scrollY > 60) {
+    if (window.scrollY > 850) {
       setShow(false);
     } else {
       setShow(true);
@@ -56,7 +56,7 @@ export default function Navbar() {
           <div className="menuBtnBurger"></div>
         </div>
 
-        {(toggleMenu || width > 800) && (
+        {(toggleMenu || width > 900) && (
           <ul>
             <li>
               Developers
