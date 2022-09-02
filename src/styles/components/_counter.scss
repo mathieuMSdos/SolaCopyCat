@@ -1,6 +1,88 @@
-.counterContainer{
-    display: grid;
-    grid-auto-flow: column;
-    grid-template: 1fr 1fr / 1fr 1fr;
-    background-color: $color-btn;
+.counterContainer {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  justify-items: center;
+  padding: 35px 10px;
+
+  background-color: $color-btn;
+
+  .containerElement:nth-child(1),
+  .containerElement:nth-child(3) {
+    border-bottom: 1px solid $color-border-counter;
+    padding-bottom: 15px;
+  }
+
+  .containerElement:nth-child(2),
+  .containerElement:nth-child(4) {
+    padding-top: 15px;
+  }
+
+  .containerElement {
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: red;
+  }
+
+  .counterElement {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    // background-color: red;
+
+    h3 {
+      width: 20%;
+      font-family: $btn-font;
+      font-weight: 100;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      color: $color-counter-text;
+
+      // background-color: blue;
+    }
+
+    p {
+      font-family: $title-font;
+      color: $color-counter-text;
+      font-size: 2.3rem;
+      letter-spacing: 1px;
+    }
+    .transacCounter {
+      width: 265px;
+      text-align: left;
+      //   background-color: blue;
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .counterContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 10px;
+
+
+    .containerElement {
+      border-bottom: 1px solid $color-border-counter;
+      padding-bottom: 15px;
+      padding-top: 20px;
+    }
+  
+    .containerElement:nth-child(4) {
+        border: unset;
+    }
+
+
+    .counterElement {
+      flex-direction: column;
+      align-items: unset;
+      row-gap: 0.2rem;
+    }
+  }
 }

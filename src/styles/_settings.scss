@@ -38,6 +38,8 @@
   src: url(../assets/fonts/ABCDiatypeSemi-Mono-Regular.39db908c.otf);
 }
 
+
+
 // FONTS
 $title-font: "title-font", sans-serif;
 $h2-font: "h2-font", sans-serif;
@@ -56,8 +58,11 @@ $color-hover-nav: #42ba96;
 $color-btn: #14f195;
 $color-text-highlight-select: #00ffbd; 
 $color-text-highlight: #232323;
-$color-border-btn: white;
-$color-hover-btn:white;
+$color-border-btn: #ffffff;
+$color-hover-btn:#ffffff;
+$color-counter-text: #000000;
+$color-border-counter: #000000;
+$color-counter-separator: #000000;
 
 * {
   margin: 0;
