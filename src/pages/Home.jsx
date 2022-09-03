@@ -1,4 +1,5 @@
 import React from "react";
+
 import Navbar from "../components/Navbar";
 import Separator from "../components/Separator";
 import VideoHero from "../components/VideoHero";
@@ -7,6 +8,8 @@ import BlockContent from "../components/BlockContent";
 import DesignBlock from "../components/DesignBlock";
 
 export default function home() {
+
+
   return (
     <>
       <Navbar />
@@ -17,7 +20,6 @@ export default function home() {
         <BlockContent />
         <DesignBlock />
         <Separator></Separator>
-
       </main>
     </>
   );
