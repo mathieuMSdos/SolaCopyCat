@@ -1,13 +1,12 @@
 .containerBlockContent {
   width: 100%;
   height: 100%;
-  padding: 10rem 6rem;
+  padding: 10rem 6rem 16rem 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   column-gap: calc(1rem + 3vw);
   transition: 0.2s ease;
-
 
   h2 {
     width: 100%;
@@ -15,7 +14,7 @@
     font-size: calc(4rem + 1vw);
     line-height: calc(4rem + 1vw);
     transition: 0.1s ease;
-}
+  }
 
   .contentContainer {
     height: 100%;
@@ -27,7 +26,6 @@
     row-gap: 40px;
     transition: 0.2s ease;
 
-
     .h3container {
       h3 {
         width: 100%;
@@ -35,7 +33,6 @@
         font-weight: 100;
         font-size: calc(0.9rem + 0.7vw);
         transition: 0.2s ease;
-
       }
     }
 
@@ -80,7 +77,6 @@
     text-align: center;
     row-gap: calc(0.5rem + 0.7vw);
 
-
     h2 {
       font-size: calc(3.2rem + 1vw);
       line-height: calc(3.2rem + 1vw);
@@ -88,11 +84,9 @@
     }
 
     .contentContainer {
-
-        align-items: center;
+      align-items: center;
 
       .h3container {
-
         h3 {
           font-size: calc(1.1rem + 0.7vw);
         }
