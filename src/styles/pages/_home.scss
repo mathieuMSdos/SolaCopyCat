@@ -3,5 +3,79 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
-//   background-color: yellow;
+  align-items: center;
+
+  .cardSection {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.4rem;
+    column-gap: 1rem;
+  }
+}
+
+
+@media screen and (max-width: 574px) {
+  main {
+    .cardSection {
+      flex-direction: column;
+      row-gap: 1rem;
+      padding: 1rem 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 575px) {
+  main {
+    .cardSection {
+      flex-direction: column;
+      row-gap: 1.4rem;
+      padding: 1rem;
+      max-width: 520px;
+
+    }
+  }
+}
+
+@media screen and (min-width: 765px) {
+  main {
+    .cardSection {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      row-gap: 1rem;
+      padding: 1rem 1.5rem;
+      max-width: 770px;
+    }
+  }
+}
+
+@media screen and (min-width: 990px) {
+  main {
+    .cardSection {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      max-width: 980px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    .cardSection {
+      max-width: 1170px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  main {
+    .cardSection {
+      max-width: 1230px;
+    }
+  }
 }
