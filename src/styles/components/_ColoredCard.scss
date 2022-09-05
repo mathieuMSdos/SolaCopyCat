@@ -1,0 +1,122 @@
+.coloredCardDataContainer {
+  height: fit-content;
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  transition: 0.1s ease;
+
+  .content {
+    h2,
+    h3 {
+      color: $color-colored-card-text;
+      font-family: $h2-font;
+      transition: 0.2s ease;
+
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      line-height: 2.3rem;
+      padding-bottom: 10px;
+      transition: 0.2s ease;
+      transition: 0.2s ease;
+
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      line-height: 1.7rem;
+      font-weight: 100;
+      transition: 0.2s ease;
+      margin-bottom: 4rem;
+      transition: 0.2s ease;
+
+    }
+  }
+  .btn {
+    cursor: pointer;
+    display: flex;
+    text-transform: uppercase;
+    text-decoration: none;
+    height: 40px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0 10px;
+    border-radius: 50px;
+    font-family: $btn-font;
+    font-size: 15px;
+    text-align: center;
+    background-color: $background-color;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      background-color: $color-hover-btn;
+      transform: translateY(-5px);
+    }
+  }
+}
+
+@media screen and (max-width: 574px) {
+}
+
+@media screen and (min-width: 575px) {
+  .coloredCardDataContainer {
+    height: calc(22rem + 3vw);
+
+    .content {
+      h2 {
+        font-size: calc(2rem + 3vw);
+        line-height: calc(2rem + 3vw);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 765px) {
+  .coloredCardDataContainer {
+    height: calc(17rem + 3vw);
+
+    .content {
+      h2 {
+        font-size: 3.2rem;
+        line-height: 3.6rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .coloredCardDataContainer {
+    height: calc(21rem + 3vw);
+
+    .content {
+      h2 {
+        font-size: 3.2rem;
+        line-height: 3.6rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .coloredCardDataContainer {
+    height: calc(22rem + 3vw);
+
+    .content {
+      h2 {
+        font-size: 3.2rem;
+        line-height: 3.6rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+}

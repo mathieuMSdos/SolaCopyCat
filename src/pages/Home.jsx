@@ -10,6 +10,7 @@ import BlockContent from "../components/BlockContent";
 import DesignBlock from "../components/DesignBlock";
 import Card from "../components/Card";
 import DesignBlockDecentralized from "../components/DesignBlockDecentralized";
+import ColoredCard from "../components/ColoredCard";
 
 import cardImg1 from "../assets/img/index_low_cost.webp";
 import cardImg2 from "../assets/img/index_fast_fck.webp";
@@ -25,6 +26,21 @@ export default function Home() {
       "Fast, forever",
       "Solana is all about speed, with 400 millisecond block times. And as hardware gets faster, so does the network",
       cardImg2,
+    ],
+  ]);
+
+  const [coloredCardData, setColoredCardData] = useState([
+    [
+      "Solana Community",
+      "There's something for everybody. Follow along, chat on Discord, or read up on what we’re doing.",
+      "learn more",
+      "#eb54bc",
+    ],
+    [
+      "Become a Validator",
+      "Help secure the network by running decentralized infrastructure. Learn about operating a validator node.",
+      "Get Started",
+      "#14f195",
     ],
   ]);
 
@@ -47,7 +63,14 @@ export default function Home() {
         <Separator></Separator>
         <Separator></Separator>
 
-
+        <section className="coloredCardDataSection">
+          {coloredCardData.map((item) => (
+            <ColoredCard
+              key={uuidv4()}
+              coloredCardData={item}
+            ></ColoredCard>
+          ))}
+        </section>
       </main>
     </>
   );
