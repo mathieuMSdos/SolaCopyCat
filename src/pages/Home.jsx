@@ -44,6 +44,10 @@ export default function Home() {
           ))}
         </section>
         <DesignBlockDecentralized />
+        <Separator></Separator>
+        <Separator></Separator>
+
+
       </main>
     </>
   );

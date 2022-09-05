@@ -1,3 +1,144 @@
 .centralizedBlockContainer {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  transition: 0.2s ease;
+  //   background-color: rgba(255, 0, 0, 0.265);
 
+  img {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .content {
+    position: absolute;
+    width: 90%;
+    top: 16rem;
+    transform: translateY(-50%);
+    transition: 0.2s ease;
+
+
+    h2 {
+      font-family: $title-font;
+      font-size: 3rem;
+      line-height: 3rem;
+      transition: 0.2s ease;
+
+    }
+    h3 {
+      font-family: $h2-font;
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+      transition: 0.2s ease;
+
+    }
+    h4 {
+      font-family: $h2-font;
+      font-size: 1.2rem;
+      font-weight: 100;
+      line-height: 1.6rem;
+      transition: 0.2s ease;
+
+    }
+  }
+}
+
+@media screen and (min-width: 575px) {
+  .centralizedBlockContainer {
+    img {
+    }
+
+    .content {
+      width: 490px;
+
+      h2 {
+        font-size: calc(1.7rem + 3vw);
+        line-height: calc(1.7rem + 3vw);
+      }
+      h3 {
+      }
+      h4 {
+      }
+    }
+  }
+}
+@media screen and (min-width: 765px) {
+  .centralizedBlockContainer {
+    img {
+    }
+
+    .content {
+      width: 370px;
+      top: 20rem;
+
+      h2 {
+        font-size: calc(1.7rem + 4.4vw);
+        line-height: calc(1.7rem + 4.4vw);
+      }
+      h3 {
+      }
+      h4 {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 990px) {
+  .centralizedBlockContainer {
+    img {
+    }
+
+    .content {
+      width: 600px;
+      top: 25rem;
+
+      h2 {
+        font-size: 4rem;
+        line-height: 4rem;
+      }
+      h3 {
+        font-size: 2.6rem;
+      }
+
+      h4 {
+        line-height: 1.8rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .centralizedBlockContainer {
+    img {
+    }
+
+    .content {
+      width: 800px;
+      top: 28rem;
+
+      h4 {
+        line-height: 1.8rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+    .centralizedBlockContainer {
+        margin-bottom: 5rem;
+
+        img {
+        }
+    
+        .content {
+          width: 800px;
+          top: 33rem;
+    
+          h4 {
+            line-height: 1.8rem;
+          }
+        }
+      }
 }

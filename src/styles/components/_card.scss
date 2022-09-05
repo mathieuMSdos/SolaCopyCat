@@ -7,6 +7,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: 0.2s ease;
+
 
   img {
     width: 100%;
@@ -14,18 +16,24 @@
 
   .cardContent {
     padding: 2rem 1rem;
+    transition: 0.2s ease;
+
 
     h2 {
       font-family: $title-font;
       font-size: 70px;
       line-height: 70px;
       padding-bottom: 10px;
+      transition: 0.2s ease;
+
     }
 
     h3 {
       font-family: $h2-font;
       font-size: 20px;
       font-weight: 100;
+      transition: 0.2s ease;
+
     }
   }
 }
