@@ -11,6 +11,7 @@ import DesignBlock from "../components/DesignBlock";
 import Card from "../components/Card";
 import DesignBlockDecentralized from "../components/DesignBlockDecentralized";
 import ColoredCard from "../components/ColoredCard";
+import SoloCard from "../components/SoloCard";
 
 import cardImg1 from "../assets/img/index_low_cost.webp";
 import cardImg2 from "../assets/img/index_fast_fck.webp";
@@ -70,6 +71,7 @@ export default function Home() {
               coloredCardData={item}
             ></ColoredCard>
           ))}
+          <SoloCard></SoloCard>
         </section>
       </main>
     </>
