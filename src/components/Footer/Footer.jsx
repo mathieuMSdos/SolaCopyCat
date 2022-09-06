@@ -1,4 +1,5 @@
 import React from "react";
+import GraphicBlockFooter from "./GraphicBlockFooter";
 
 export default function Footer() {
   return (
@@ -152,7 +153,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="designBlockContainer">
-        {/* créer un autre composant pour ce truc */}
+        <GraphicBlockFooter />
       </div>
     </div>
   );

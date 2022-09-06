@@ -12,7 +12,7 @@ import Card from "../components/Card";
 import DesignBlockDecentralized from "../components/DesignBlockDecentralized";
 import ColoredCard from "../components/ColoredCard";
 import SoloCard from "../components/SoloCard";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer/Footer";
 
 import cardImg1 from "../assets/img/index_low_cost.webp";
 import cardImg2 from "../assets/img/index_fast_fck.webp";
