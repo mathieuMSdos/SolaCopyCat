@@ -6,7 +6,7 @@
   align-items: flex-start;
   justify-content: center;
   transition: 0.2s ease;
-  //   background-color: rgba(255, 0, 0, 0.265);
+    // background-color: rgba(255, 0, 0, 0.265);
 
   img {
     position: absolute;
@@ -47,10 +47,26 @@
   }
 }
 
+@media screen and (min-width: 460px) {
+  .centralizedBlockContainer {
+    height: 400px;
+
+    .content {
+
+      h2 {
+        font-size: calc(1.7rem + 3vw);
+        line-height: calc(1.7rem + 3vw);
+      }
+      h4 {
+        font-size: 1.3rem;
+      }
+
+    }
+  }
+}
+
 @media screen and (min-width: 575px) {
   .centralizedBlockContainer {
-    img {
-    }
 
     .content {
       width: 490px;
@@ -59,17 +75,14 @@
         font-size: calc(1.7rem + 3vw);
         line-height: calc(1.7rem + 3vw);
       }
-      h3 {
-      }
-      h4 {
-      }
+
+
     }
   }
 }
 @media screen and (min-width: 765px) {
   .centralizedBlockContainer {
-    img {
-    }
+    height: 500px;
 
     .content {
       width: 370px;
@@ -79,8 +92,6 @@
         font-size: calc(1.7rem + 4.4vw);
         line-height: calc(1.7rem + 4.4vw);
       }
-      h3 {
-      }
       h4 {
         font-size: 1.3rem;
       }
@@ -89,8 +100,7 @@
 }
 @media screen and (min-width: 990px) {
   .centralizedBlockContainer {
-    img {
-    }
+    height: 600px;
 
     .content {
       width: 600px;
@@ -112,8 +122,7 @@
 }
 @media screen and (min-width: 1200px) {
   .centralizedBlockContainer {
-    img {
-    }
+    height: 650px;
 
     .content {
       width: 800px;
@@ -129,9 +138,6 @@
     .centralizedBlockContainer {
         margin-bottom: 5rem;
 
-        img {
-        }
-    
         .content {
           width: 800px;
           top: 33rem;

@@ -62,21 +62,15 @@ export default function Home() {
         </section>
         <DesignBlockDecentralized />
         <Separator></Separator>
-        <Separator></Separator>
 
         <section className="coloredCardDataSection">
           {coloredCardData.map((item) => (
-            <ColoredCard
-              key={uuidv4()}
-              coloredCardData={item}
-            ></ColoredCard>
+            <ColoredCard key={uuidv4()} coloredCardData={item}></ColoredCard>
           ))}
         </section>
         <section className="soloCardSection">
-        <SoloCard></SoloCard>
-
+          <SoloCard></SoloCard>
         </section>
-
       </main>
     </>
   );
