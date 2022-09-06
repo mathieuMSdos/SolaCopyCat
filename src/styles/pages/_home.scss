@@ -47,8 +47,7 @@ main {
 @media screen and (min-width: 350px) {
   main {
     .footerSection {
-      padding: 0rem 1rem;
-      flex-wrap: wrap;
+      padding: 0rem 2rem;
     }
   }
 }
@@ -101,6 +100,10 @@ main {
       width: 700px;
       padding: 0rem 1rem;
     }
+
+    .footerSection {
+      width: 700px;
+    }
   }
 }
 
@@ -122,6 +125,9 @@ main {
       width: 950px;
       padding: 0rem 1rem;
     }
+    .footerSection {
+      width: 1000px;
+    }
   }
 }
 
@@ -138,6 +144,10 @@ main {
     .soloCardSection {
       width: 1150px;
       padding: 0rem 1rem;
+    }
+
+    .footerSection {
+      width: 1150px;
     }
   }
 }
@@ -156,6 +166,10 @@ main {
     .soloCardSection {
       width: 1250px;
       padding: 0rem 1rem;
+    }
+
+    .footerSection {
+      width: 1250px;
     }
   }
 }
