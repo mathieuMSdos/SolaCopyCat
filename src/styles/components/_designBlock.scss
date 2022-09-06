@@ -3,14 +3,17 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   transition: 0.2 ease;
+  padding: 0 1.2rem;
+  transition: 0.2s ease;
 
   .contentContainer {
     width: 100%;
     height: fit-content;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    padding: 0 16rem;
     transition: 0.2 ease;
 
     h2 {
@@ -27,6 +30,7 @@
     h4 {
       padding-top: 1.1rem;
       font-family: $h2-font;
+      font-weight: 100;
       font-size: calc(0.5rem + 1vw);
       font-weight: 100;
       transition: 0.2 ease;
@@ -40,25 +44,128 @@
   }
 }
 
-@media screen and (max-width: 850px) {
+// RESPONSIVE
+
+@media screen and (min-width: 350px) {
+}
+
+@media screen and (max-width: 574px) {
   .designBlockContainer {
     .contentContainer {
-      padding: 0 1.4rem;
+      h2 {
+        font-size: 2.6rem;
+        line-height: 2.6rem;
+      }
+      h3 {
+        font-size: 2.4rem;
+      }
+      h4 {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 575px) {
+  .designBlockContainer {
+    width: 100%;
+
+    .contentContainer {
+      width: 500px;
 
       h2 {
-        font-size: calc(2rem + 2vw);
-        line-height: calc(2.5rem + 1vw);
+        font-size: calc(2rem + 3vw);
+        line-height: calc(2rem + 3vw);
       }
-
       h3 {
-        font-size: calc(2rem + 2vw);
-        line-height: calc(2rem + 2vw);
-        // background-color: red;
+        font-size: 2.4rem;
       }
-
       h4 {
-        font-size: calc(0.9rem + 1vw);
-        line-height: calc(1.4rem + 1vw);
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 765px) {
+  .designBlockContainer {
+    width: 100%;
+
+    .contentContainer {
+      width: 320px;
+
+      h2 {
+        font-size: calc(2rem + 3vw);
+        line-height: calc(2rem + 3vw);
+      }
+      h3 {
+        font-size: 2.4rem;
+      }
+      h4 {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .designBlockContainer {
+    width: 100%;
+
+    .contentContainer {
+      width: 600px;
+
+      h2 {
+        font-size: 4.4rem;
+        line-height: 4.4rem;
+      }
+      h3 {
+        font-size: 2.4rem;
+      }
+      h4 {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .designBlockContainer {
+    width: 100%;
+
+    .contentContainer {
+      width: 700px;
+
+      h2 {
+        font-size: 4.4rem;
+        line-height: 4.4rem;
+      }
+      h3 {
+        font-size: 2.4rem;
+      }
+      h4 {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .designBlockContainer {
+    width: 100%;
+
+    .contentContainer {
+      width: 800px;
+
+      h2 {
+        font-size: 4.4rem;
+        line-height: 4.4rem;
+      }
+      h3 {
+        font-size: 2.4rem;
+      }
+      h4 {
+        font-size: 1.3rem;
       }
     }
   }
