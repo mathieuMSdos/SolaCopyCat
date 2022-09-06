@@ -1,0 +1,82 @@
+.graphicBlockContainer {
+  position: relative;
+  height: 90px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: $color-background-footer;
+  padding: 1rem 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .shadow {
+    position: absolute;
+    z-index: -1;
+    min-height: 2.3rem;
+    height: calc(2.3rem + 2vw);
+    max-height: 4rem;
+    width: calc(100% - 0.5rem);
+    left: 0.25rem;
+    right: 0.25rem;
+    bottom: calc(100% - 0.5rem);
+    clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
+    background: linear-gradient(
+      360deg,
+      rgb(255, 255, 255) -5.71%,
+      transparent 100%
+    );
+  }
+
+  .logo {
+  }
+  .linkContainer {
+    width: fit-content;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    column-gap: 0.8rem;
+
+    .linkHome {
+      a {
+        font-family: $text-font;
+        font-weight: 100;
+        font-size: 1.1rem;
+        color: $text-color-invert;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+    }
+    .languageIcon {
+      position: relative;
+      display: flex;
+      cursor: pointer;
+
+      a {
+        color: $text-color-invert;
+      }
+      .downFooterMenu {
+        position: absolute;
+        height: fit-content;
+        width: 220px;
+        top: 3rem;
+        right: -1rem;
+        background-color: $color-background-footer;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        padding: 1.5rem;
+        a{
+            font-family: $h2-font;
+            font-size: 0.9rem;
+            text-decoration: none;
+            color: $color-text-language-menu ;
+            &:hover {
+                color: $color-text-language-hover;
+            }
+        }
+
+      }
+    }
+  }
+}
