@@ -71,8 +71,12 @@ export default function Home() {
               coloredCardData={item}
             ></ColoredCard>
           ))}
-          <SoloCard></SoloCard>
         </section>
+        <section className="soloCardSection">
+        <SoloCard></SoloCard>
+
+        </section>
+
       </main>
     </>
   );

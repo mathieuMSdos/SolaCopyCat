@@ -25,6 +25,16 @@ main {
     padding: 1rem 1.4rem;
     row-gap: 1rem;
   }
+
+  .soloCardSection{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 1.4rem;
+  }
 }
 
 // responsive
@@ -36,6 +46,7 @@ main {
       row-gap: 1rem;
       padding: 1rem 1.5rem;
     }
+    
   }
 }
 
@@ -52,6 +63,11 @@ main {
       width: 560px;
       padding: 1rem 1.4rem;
     }
+    .soloCardSection{
+      width: 560px;
+      padding: 0rem 1.5rem;
+    }
+
   }
 }
 
@@ -68,6 +84,10 @@ main {
     .coloredCardDataSection {
       width: 700px;
       padding: 1rem 1rem;
+    }
+    .soloCardSection{
+      width: 700px;
+      padding: 0rem 1rem;
     }
   }
 }
@@ -86,6 +106,10 @@ main {
       width: 950px;
       column-gap: 1rem;
     }
+    .soloCardSection{
+      width: 950px;
+      padding: 0rem 1rem;
+    }
   }
 }
 
@@ -98,6 +122,10 @@ main {
       flex-direction: row;
       width: 1150px;
       column-gap: 1rem;
+    }
+    .soloCardSection{
+      width: 1150px;
+      padding: 0rem 1rem;
     }
   }
 }
@@ -112,5 +140,11 @@ main {
       width: 1250px;
       column-gap: 1rem;
     }
+
+    .soloCardSection{
+      width: 1250px;
+      padding: 0rem 1rem;
+    }
+    
   }
 }
