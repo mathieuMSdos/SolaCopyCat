@@ -34,10 +34,12 @@ main {
     justify-content: center;
     align-items: center;
     padding: 0rem 1.4rem;
+    border-bottom: solid 1px $solo-card-separation;
   }
+
 }
 
-// responsive
+// RESPONSIVE
 
 @media screen and (max-width: 574px) {
   main {

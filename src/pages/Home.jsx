@@ -71,6 +71,8 @@ export default function Home() {
         <section className="soloCardSection">
           <SoloCard></SoloCard>
         </section>
+
+        <Separator></Separator>
       </main>
     </>
   );
