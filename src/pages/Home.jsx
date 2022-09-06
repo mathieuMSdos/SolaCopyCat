@@ -12,6 +12,7 @@ import Card from "../components/Card";
 import DesignBlockDecentralized from "../components/DesignBlockDecentralized";
 import ColoredCard from "../components/ColoredCard";
 import SoloCard from "../components/SoloCard";
+import Footer from "../components/Footer";
 
 import cardImg1 from "../assets/img/index_low_cost.webp";
 import cardImg2 from "../assets/img/index_fast_fck.webp";
@@ -71,8 +72,9 @@ export default function Home() {
         <section className="soloCardSection">
           <SoloCard></SoloCard>
         </section>
-
-        <Separator></Separator>
+        <section className="footerSection">
+          <Footer />
+        </section>
       </main>
     </>
   );
