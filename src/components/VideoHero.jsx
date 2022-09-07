@@ -13,10 +13,7 @@ export default function Test() {
         </div>
       </div>
       <div className="textAndBtnContainer">
-        <h1>
-          Powerful for developers.<br></br>
-          Fast for everyone.
-        </h1>
+        <h1>Powerful for developers. Fast for everyone.</h1>
         <div className="btnContainer">
           <a href="">start building</a>
           <a href="">read documentation</a>
