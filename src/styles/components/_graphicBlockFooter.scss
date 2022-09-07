@@ -59,25 +59,36 @@
         position: absolute;
         height: fit-content;
         width: 220px;
-        top: 3rem;
         right: -1rem;
         background-color: $color-background-footer;
         display: flex;
         flex-direction: column;
         row-gap: 1rem;
         padding: 1.5rem;
-        a{
-          user-select: none;
-            font-family: $h2-font;
-            font-size: 0.9rem;
-            text-decoration: none;
-            color: $color-text-language-menu ;
-            &:hover {
-                color: $color-text-language-hover;
-            }
-        }
 
+        a {
+          user-select: none;
+          font-family: $h2-font;
+          font-size: 0.9rem;
+          text-decoration: none;
+          color: $color-text-language-menu;
+          &:hover {
+            color: $color-text-language-hover;
+          }
+        }
       }
     }
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .downFooterMenu {
+    top: -36rem;
+  }
+}
+
+@media screen and (min-width: 765px) {
+  .downFooterMenu {
+    top: 2rem;
   }
 }

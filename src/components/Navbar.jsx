@@ -39,8 +39,8 @@ export default function Navbar() {
   useEffect(() => {
     window.addEventListener("scroll", controlNavBar);
     return () => {
-      window.removeEventListener("scroll", controlNavBar)
-    }
+      window.removeEventListener("scroll", controlNavBar);
+    };
   }, []);
 
   return (
@@ -49,6 +49,7 @@ export default function Navbar() {
         <a href="">
           <img className="logo" src={solLogo} alt="" />
         </a>
+
         <div
           className={toggleMenu ? "menuBtn open" : "menuBtn"}
           onClick={toggleNav}

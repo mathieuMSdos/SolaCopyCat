@@ -24,11 +24,10 @@ header {
     flex-direction: row;
     transition: 0.2s ease-in-out;
     background-color: $background-color;
-  }
 
-  a {
-    width: fit-content;
-    // background-color: yellow;
+    a {
+      width: fit-content;
+    }
   }
 
   .logo {
