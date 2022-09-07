@@ -67,6 +67,7 @@
         row-gap: 1rem;
         padding: 1.5rem;
         a{
+          user-select: none;
             font-family: $h2-font;
             font-size: 0.9rem;
             text-decoration: none;

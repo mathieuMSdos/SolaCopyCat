@@ -40,6 +40,7 @@
 
     .btnExplore {
       cursor: pointer;
+      user-select: none;
       text-transform: uppercase;
       text-decoration: none;
       height: 40px;

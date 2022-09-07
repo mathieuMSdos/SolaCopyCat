@@ -83,10 +83,6 @@
       font-family: $title-font;
       line-height: 1;
 
-      &::selection {
-        background: $color-text-highlight-select;
-        color: $color-text-highlight;
-      }
     }
 
     .btnContainer {
@@ -136,10 +132,6 @@
       font-weight: 100;
       line-height: 1.7rem;
 
-      &::selection {
-        background: $color-text-highlight-select;
-        color: $color-text-highlight;
-      }
     }
   }
 }
