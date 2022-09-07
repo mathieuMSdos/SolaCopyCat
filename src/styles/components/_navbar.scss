@@ -11,7 +11,6 @@ header {
   height: fit-content;
   transition: 0.2s ease-in-out;
   z-index: 1000;
-  // background-color: red;
 
   nav {
     user-select: none;
@@ -25,7 +24,6 @@ header {
     flex-direction: row;
     transition: 0.2s ease-in-out;
     background-color: $background-color;
-    // background-color: orange;
   }
 
   a {
@@ -148,7 +146,18 @@ header {
       align-items: unset;
       transition: 0.2s ease-in-out;
       background-color: $background-color;
-      // background-color: blue;
+    }
+
+    a {
+      width: fit-content;
+    }
+
+    .logo {
+      height: 45px;
+      margin: 10px;
+      margin-left: 1.6rem;
+      width: 9rem;
+      transition: 0.4s ease-in-out;
     }
 
     .menuBtn {
@@ -184,8 +193,12 @@ header {
     li {
       border-top: solid $nav-separation-color 1px;
       width: 100%;
-      padding: 25px 0 25px 20px;
+      padding: 1.6rem 1.6rem;
       justify-content: left;
+    }
+
+    .menuBtn {
+      top: 1.3rem;
     }
   }
 }
