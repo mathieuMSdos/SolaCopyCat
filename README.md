@@ -7,6 +7,3 @@ Live Site URL: https://solanacopy.vercel.app/
 ## Built with
 - Reactjs
 - Sass
-
-## Author
-Twitter - @Ovitz13
